@@ -1,7 +1,7 @@
 'use strict';
 
 function createArray() {
-  return Array.from({ length: 1e7 }, () => Math.floor(Math.random() * 100));
+  return Array.from({ length: 1e4 }, () => Math.floor(Math.random() * 100));
 }
 
 const myArr1 = createArray();
@@ -53,8 +53,8 @@ function getItersection3(arr1, arr2) {
 // Менять длинну на 4 строке
 
 let start = Date.now();
-// console.log(getItersection1(myArr1, myArr2));
-// console.log(`Lead time (arrays bubbles): ${Date.now() - start} ms`);
+console.log(getItersection1(myArr1, myArr2));
+console.log(`Lead time (arrays bubbles): ${Date.now() - start} ms`);
 
 start = Date.now();
 console.log(getItersection2(myArr1, myArr2));
