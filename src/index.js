@@ -40,7 +40,7 @@ function getItersection3(arr1, arr2) {
   const set1 = new Set(arr1);
   let intersection = [];
   for (const item of set1) {
-    if (!intersection.includes(item) && arr2.includes(item)) {
+    if (arr2.includes(item)) {
       intersection.push(item);
     }
   }
